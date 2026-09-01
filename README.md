@@ -51,7 +51,7 @@ Search the codebase for these and swap in real values before/soon after launch:
 
 | Placeholder | Where | Replace with |
 |---|---|---|
-| `NATE_MICHAELS_NEWSLETTER_URL` | `index.html`, Newsletter section + footer | Real Substack/newsletter signup URL |
+| Newsletter URL | `index.html`, Newsletter section + footer | `https://substack.com/@geographyninja` |
 | `GITHUB_PROFILE_URL` | `index.html`, footer | Real GitHub profile/org URL |
 | `OG_IMAGE_URL` | `index.html`, `<head>` Open Graph tags | Absolute URL to a social preview image |
 | `OG_SITE_URL` | `index.html`, `<head>` Open Graph tags | Absolute production URL of the site |
@@ -68,7 +68,7 @@ Everything lives in `index.html`, organized into clearly commented `<section>` b
   bullets, and the Payhip link (`href`) as products change. The bundle note is a plain paragraph,
   not a product card — don't turn it into a purchasable item until a bundle actually exists.
 - **About** (`#about`) — plain paragraphs, safe to edit freely.
-- **Newsletter** (`#newsletter`) — one CTA button, linked via `NATE_MICHAELS_NEWSLETTER_URL`.
+- **Newsletter** (`#newsletter`) — one CTA button, linked to the Nate Michaels Substack profile.
 
 Styling lives in `assets/css/style.css`; behavior (mobile nav + footer year) lives in
 `assets/js/main.js`. Neither needs to change for routine content edits.
