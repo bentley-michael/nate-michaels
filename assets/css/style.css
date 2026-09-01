@@ -340,6 +340,59 @@ a {
 
 /* ---------- Products ---------- */
 
+.compare {
+  border: 1px solid var(--color-rule);
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  background-color: var(--color-bg-muted);
+}
+
+.compare-heading {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+}
+
+.compare-column {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-rule);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.compare-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 0.75rem;
+}
+
+.compare-label {
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+.compare-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--color-ink-soft);
+}
+
+.compare-list li {
+  margin-bottom: 0.35rem;
+}
+
+.compare-choose {
+  color: var(--color-ink-soft);
+  margin: 0;
+}
+
 .product-grid {
   margin-bottom: 1.5rem;
 }
