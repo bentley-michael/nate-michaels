@@ -51,8 +51,6 @@ Search the codebase for these and swap in real values before/soon after launch:
 
 | Placeholder | Where | Replace with |
 |---|---|---|
-| `PAYHIP_TRIP_COMMAND_CENTER_URL` | `index.html`, Tools & Guides | Real Payhip product URL |
-| `PAYHIP_NOMAD_STARTER_URL` | `index.html`, Tools & Guides | Real Payhip product URL |
 | `NATE_MICHAELS_NEWSLETTER_URL` | `index.html`, Newsletter section + footer | Real Substack/newsletter signup URL |
 | `GITHUB_PROFILE_URL` | `index.html`, footer | Real GitHub profile/org URL |
 | `OG_IMAGE_URL` | `index.html`, `<head>` Open Graph tags | Absolute URL to a social preview image |
