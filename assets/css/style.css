@@ -399,6 +399,69 @@ a {
   margin: 0;
 }
 
+/* ---------- Travel Photography Field Notes ---------- */
+
+.photography-notes {
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.field-tips {
+  counter-reset: field-tip;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 0 2.5rem;
+  max-width: 58rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.field-tips li {
+  counter-increment: field-tip;
+  position: relative;
+  padding: 1.4rem 0 1.4rem 2.5rem;
+  border-top: 1px solid var(--color-rule);
+}
+
+.field-tips li::before {
+  content: "0" counter(field-tip);
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  color: var(--color-moss);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.field-tips h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.field-tips p {
+  color: var(--color-ink-soft);
+  margin: 0;
+}
+
+.guide-preview {
+  max-width: 42rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--color-accent);
+}
+
+.guide-preview h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.guide-preview p:last-child {
+  color: var(--color-ink-soft);
+  max-width: 38rem;
+  margin: 0;
+}
+
 /* ---------- Products ---------- */
 
 .compare {
