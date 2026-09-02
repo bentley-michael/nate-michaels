@@ -45,28 +45,15 @@ needed either way.
 A `CNAME` file is intentionally omitted. Add one only when a custom domain (e.g.
 `natemichaels.us`) is ready to be pointed at this repo.
 
-## Placeholders to replace
-
-Search the codebase for these and swap in real values before/soon after launch:
-
-| Placeholder | Where | Replace with |
-|---|---|---|
-| Newsletter URL | `index.html`, Newsletter section + footer | `https://substack.com/@geographyninja` |
-| `GITHUB_PROFILE_URL` | `index.html`, footer | Real GitHub profile/org URL |
-| `OG_IMAGE_URL` | `index.html`, `<head>` Open Graph tags | Absolute URL to a social preview image |
-| `OG_SITE_URL` | `index.html`, `<head>` Open Graph tags | Absolute production URL of the site |
-
 ## Editing content
 
 Everything lives in `index.html`, organized into clearly commented `<section>` blocks:
 
 - **Explore** (`#explore`) — the four topic cards. Edit copy directly in the `.topic-card` items.
-- **Field Notes** (`#field-notes`) — placeholder article concepts in `.post-card` items. Each
-  currently shows a "Coming soon" label; once an article is published, turn the `<article>` into
-  a real link (e.g. wrap the heading in an `<a>` to the post) and remove the `post-status` label.
+- **Field Notes** (`#field-notes`) — the coffee field note links to its article page; the remaining
+  `.post-card` items are placeholders until their articles are published.
 - **Tools & Guides** (`#tools`) — product cards in `.product-card` items. Update price, benefit
-  bullets, and the Payhip link (`href`) as products change. The bundle note is a plain paragraph,
-  not a product card — don't turn it into a purchasable item until a bundle actually exists.
+  bullets, and the Payhip link (`href`) as products change.
 - **About** (`#about`) — plain paragraphs, safe to edit freely.
 - **Newsletter** (`#newsletter`) — one CTA button, linked to the Nate Michaels Substack profile.
 
